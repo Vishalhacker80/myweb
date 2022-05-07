@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("enter your choice for a particular operation"));
+        switch (a) {
+            case 1:
+                var l = parseInt(prompt("enter the length of a rectangle"));
+                var b = parseInt(prompt("enter the breadth of a rectangle"));
+                var a = l * b;
+                document.write("area of a rectangle is<br>" + a);
+                break;
+            case 2:
+                var l = parseInt(prompt("enter the length of a square"));
+                var a = l * l;
+                document.write("area of square is <br>" + a);
+                break;
+            case 3:
+                var r = parseInt(prompt("enter the radius of a circle"));
+                var a = 3.14 * r * r;
+                document.write("area of circle is <br> " + a);
+                break;
+            case 4:
+                var h = parseInt(prompt("enter the height of a triangle"));
+                var l = parseInt(prompt("enter the length of a triangle"));
+                var a = 0.5 * l * b;
+                document.write("area of a triangle is " + a);
+
+        }
+    </script>
+</body>
+
+</html>

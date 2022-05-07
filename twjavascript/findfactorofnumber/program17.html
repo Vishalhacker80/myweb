@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any number "));
+        s = 0;
+        p = 1;
+        c = 0;
+        document.write("all factors of a input number are <br>")
+        for (i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                s = s + i;
+                p = p * i;
+                c = c + 1;
+                document.write(i + "<br>");
+            }
+        }
+        document.write("<br> sum of all the factors of a input is <br>" + s);
+        document.write("<br> product of all the factors of a input is <br>" + p);
+        document.write("<br> total count of all factors of a input is <br>" + c);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate total marks and percentage of student</title>
+</head>
+
+<body>
+    <script>
+        var eng = parseInt(prompt('enter english marks'));
+        var hindi = parseInt(prompt('enter hindi marks'));
+        var science = parseInt(prompt('enter science marks'));
+        var history = parseInt(prompt('enter history marks'));
+        var maths = parseInt(prompt('enter maths marks'));
+        var maximummarks = 500;
+        var totalmarks = eng + hindi + science + history + maths;
+        var percentage = (parseInt(totalmarks) / maximummarks) * 100;
+        document.write("your total marks are " + totalmarks + "<br>" + "your percentage is" + percentage);
+    </script>
+
+
+</body>
+
+</html>

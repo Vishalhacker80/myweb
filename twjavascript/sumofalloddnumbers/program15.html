@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any n number"));
+        s = 0;
+        p = 1;
+        c = 0;
+        document.write("all odds number are<br>");
+        for (i = n; i >= 1; i--) {
+
+            if (i % 2 != 0) {
+                document.write(i + "<br>");
+                s = s + i;
+                p = p * i;
+                c = c + 1;
+            }
+        }
+        document.write("<br>sum of all odd numbers are <br>" + s);
+        document.write("<br>product of all odd number are <br>" + p);
+        document.write("<br>total number of odd numbers are <br>" + c);
+    </script>
+</body>
+
+</html>

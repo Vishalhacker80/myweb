@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any n number"));
+        s = 1;
+        f = 2;
+        document.write("series are <br>" + s);
+        for (i = 1; i <= n - 1; i++) {
+            s = s + f;
+            f = f + 1;
+            if (i % 2 == 0) {
+                document.write(" " + s);
+            }
+            else {
+                document.write(" " + -s);
+            }
+        }
+    </script>
+</body>
+
+</html>

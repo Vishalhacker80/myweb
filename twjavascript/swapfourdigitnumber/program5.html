@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swap four digit number</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("enter any four digit number"));
+        var b = parseInt((a % 10) * 1000);
+        var c = parseInt(a / 10);
+        var e = parseInt((c % 10) * 100);
+        var f = parseInt(c / 10);
+        var g = parseInt((f % 10) * 10);
+        var h = parseInt(f / 10);
+        var rev = (b + e + g + h);
+        var square = (b * b + e * e + g * g + h * h);
+        var cube = (b * b * b + e * e * e + g * g * g + h * h * h);
+        document.write("reverse of four digit number is " + rev + "<br>" + "square of each digit of reverse number is" + square + "<br>cube of each digit reverse number is " + cube);
+
+
+
+    </script>
+
+</body>
+
+</html>

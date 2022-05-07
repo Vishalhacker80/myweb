@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any number"));
+        for (i = 1; i <= n; i++) {
+            s = 0;
+            for (j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    s = s + j;
+                }
+            }
+            if (s - i == i) {
+                document.write(i + "<br>");
+
+            }
+            else {
+                n = n + 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

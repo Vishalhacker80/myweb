@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript basic animation</title>
+</head>
+
+<body onload="animate_string()" <pre id="target">w3resource <p>hello</p>
+    </pre>
+    <script>
+        function animate_string() {
+            var element = document.getElementById("target");
+
+
+            var textNode = element.childNodes[0]; // assuming no other children
+            console.log(textNode)
+            var text = textNode.data;
+
+
+            setInterval(function () {
+                text = text[text.length - 1] + text.slice(0, text.length - 1);
+                textNode.data = text;
+            }, 100);
+        }
+
+    </script>
+</body>
+
+</html>

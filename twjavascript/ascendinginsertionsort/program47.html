@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any number"));
+        var a = new Array(n);
+        for (i = 0; i < n; i++) {
+            a[i] = parseInt(prompt("enter any number"));
+        }
+        document.write(a + "<br>");
+        s = 1;
+        for (i = 1; i <= n; i++) {
+            for (j = 0; j < i; j++) {
+                if (a[j] > a[s]) {
+                    d = a[j];
+                    a[s] = d;
+                    a[j] = a[s];
+
+
+
+
+                }
+            }
+            s = s + 1;
+            document.write(a + "<br>");
+        }
+        document.write("Array after ascending insertion sort" + a);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any number"));
+        var a = new Array(n);
+        for (i = 0; i < n; i++) {
+            a[i] = parseInt(prompt("enter any number"));
+        }
+        max = a[0];
+        min = a[0];
+        sum = a[0];
+
+        for (j = 1; j < n; j++) {
+            if (a[j] > max) {
+                max = a[j];
+                l = j;
+            }
+            if (a[j] < min) {
+                min = a[j];
+                s = j;
+            }
+        }
+        a[l] = a[n - 1];
+        a[n - 1] = max;
+        a[s] = a[0];
+        a[0] = min;
+        document.write("Array after swapping " + a);
+    </script>
+</body>
+
+</html>

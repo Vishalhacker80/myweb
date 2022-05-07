@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        var n = parseInt(prompt("enter any number"));
+        var a = new Array(n);
+        for (i = 0; i < n; i++) {
+            a[i] = parseInt(prompt("enter any number"));
+        }
+        document.write(a + "<br>");
+        var b = parseInt(prompt("enter an element"));
+        if (b <= a[0]) {
+            a.splice(0, 0, b);
+        }
+        else if (b >= a[n - 1]) {
+            a.splice(n, 0, b);
+        }
+        else {
+            for (i = 0; i < n; i++) {
+                if (b > a[i] && b < a[i + 1]) {
+                    a.splice(i + 1, 0, b);
+                    break;
+
+                }
+                else if (b == a[i]) {
+                    a.splice(i, 0, b);
+                    break;
+                }
+            }
+        }
+
+        document.write("new array are" + a);
+        */
+        var n = parseInt(prompt("enter any number"));
+        var a = new Array(n);
+        for (i = 0; i < n; i++) {
+            a[i] = parseInt(prompt("enter any number"));
+        }
+        document.write(a + "<br>");
+        var b = parseInt(prompt("enter an element"));
+        if (b <= a[0]) {
+            index = 0;
+        }
+        else if (b >= a[n - 1]) {
+            index = n;
+        }
+        else {
+            for (i = 0; i < n; i++) {
+                if (b >= a[i] && b <= a[i + 1]) {
+                    index = i + 1;
+                }
+            }
+        }
+        for (i = n; i > index; i--) {
+            a[i] = a[i - 1];
+        }
+        a[index] = b;
+        document.write(a);
+    </script>
+
+</body>
+
+</html>

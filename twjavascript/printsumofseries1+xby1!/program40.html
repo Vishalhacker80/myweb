@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("enter any n number"));
+        var x = parseInt(prompt("enter any x value"));
+        p = 1;
+        s = 0;
+        f = 1;
+        m = 1;
+        for (i = 1; i <= n - 1; i++) {
+            p = p * x;
+            for (j = 1; j <= i; j++) {
+                m = m * j;
+            }
+            s = s + parseFloat(p / m);
+        }
+        t = f + s;
+        document.write("total sum of this series is <br>" + t);
+    </script>
+</body>
+
+</html>

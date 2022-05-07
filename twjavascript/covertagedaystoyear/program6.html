@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convert your age days into years month and week</title>
+</head>
+
+<body>
+    <script>
+        var a = parseInt(prompt("enter your age in days"));
+        var month = parseInt((a % 365) / 30);
+        var days = parseInt((a % 365) / 365);
+        var year = parseInt(a / 365);
+        document.write("your age  is " + year + " years " + month + " months " + days + " days ")
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcostprice</title>
+</head>
+
+<body>
+    <script>
+        var unitprice = parseInt(prompt("enter any unit price"));
+        var quproduct = parseInt(prompt("enter any number of quantity"));
+        var discount = (unitprice * quproduct) * 10 / 100;
+        // cost price after 10% discount.
+        var costprice = unitprice * quproduct - discount;
+        document.write(costprice);
+
+
+    </script>
+</body>
+
+</html>
