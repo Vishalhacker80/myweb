@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website design</title>
+    <link rel="stylesheet" href="proj8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/1d84f32524.js"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="project8.html"><img class="size" src="eduford_img/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="project8.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Cetifacte & Online Classes For 2022</h1>
+    </section>
+    <!--  Blog Page Content -->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="eduford_img/certificate.jpg">
+                <h2>Our Cetifacte & Online Classes For 2022</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex veritatis, tempore est minus
+                    mollitia quasi magnam totam inventore tenetur cumque accusantium quaerat illum beatae quam! Corporis
+                    necessitatibus illum amet, optio quam, nam neque id perspiciatis maxime sunt ab inventore. Adipisci
+                    beatae, ab, totam magni unde, deserunt consequuntur corporis excepturi optio architecto explicabo.
+                    Esse nisi non explicabo quia tenetur minus.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum atque provident debitis cum. Nemo
+                    eos hic dolorum nesciunt dolorem nulla aut consequatur doloribus placeat iure, libero omnis magni?
+                    Recusandae veniam explicabo quis rem magni, ut nisi! Inventore illo doloremque magnam corrupti,
+                    similique nihil libero quam itaque tenetur esse veritatis! Debitis nisi ab corporis id sint quos
+                    expedita explicabo eum culpa assumenda necessitatibus voluptates aperiam nostrum nemo, ut sapiente
+                    inventore minus voluptatibus ratione veritatis perferendis, laborum ipsa voluptas rem. Suscipit
+                    dolores iusto fugiat voluptatum, necessitatibus perspiciatis hic doloribus dolor corporis debitis
+                    tenetur ullam beatae rerum magni veritatis enim quos dolorem labore.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia illum blanditiis dolor expedita
+                    inventore. Repellendus, amet cupiditate. Aut repellendus minus animi architecto voluptates sequi
+                    modi ea, dolore laboriosam debitis, ex amet rem optio, praesentium eveniet totam necessitatibus
+                    aliquam rerum incidunt dolorum iste et. Aperiam non libero a voluptate nulla fugiat pariatur ea!
+                    Labore voluptatibus deserunt assumenda consectetur sed amet animi quo laudantium aliquid voluptatum,
+                    distinctio corrupti facere. Impedit aut cumque, provident eaque ipsum sit error odit esse eius magni
+                    pariatur eveniet dolores ipsam tempora quia repellat veniam molestiae, iusto mollitia?
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto nulla odit illum ullam deserunt
+                    dignissimos, possimus architecto officia nostrum dolores quas voluptatibus earum corporis impedit
+                    dicta! Nihil dolores sit commodi possimus! Nihil alias nisi itaque repellendus adipisci, blanditiis
+                    vitae?
+                </p>
+                <div class="comment-box">
+                    <h3>
+                        Leave a Comment
+                    </h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name ">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea name="comment-box" rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Data Scientist</span>
+                    <span>27</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>19</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>21</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>While the About page of Vishla Bisht introduces the artist in detail, it also stays true to the <br>overall
+            theme of his website. The life-size image of the photographer is captured in his signature style.
+            Meanwhile,<br> the content communicates essential details like the photographer’s career milestones, his
+            style of photography, and his work ethic</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </footer>
+
+    <script>
+        // ---- Javascript for Toggle Menu---
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
